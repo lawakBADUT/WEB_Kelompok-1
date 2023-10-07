@@ -10,72 +10,146 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="index.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <style>
+      .banner {
+        background: url("latar2.png") no-repeat center center;
+        background-size: cover;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        color: white;
+      }
+      .lingkaran {
+        display: inline-block;
+        border-radius: 50%;
+        width: 150px;
+        margin: auto;
+        height: 150px;
+        color: white;
+        background-color: bisque;
+      }
+      .lingkaran i {
+        position: relative;
+        top: 25px;
+      }
+      .tim img {
+        width: 150px;
+        border: 7px solid rgba(220, 225, 224, 0.452);
+      }
+      .social {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: white;
+        border-radius: 50%;
+        background-color: rgb(57, 47, 34);
+        line-height: 30px;
+      }
+
+      .footer {
+        background: url("Contact.png");
+        background-color: cover;
+        padding-bottom: 20%;
+        padding-top: 20%;
+      }
+      .card {
+        margin: 0 auto;
+      }
+      .ig {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <!-- navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="logo.jpg" width="50" height="50" />One inc.</a>
-
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo.jpg" width="50" height="50" alt="One Inc. Logo" /> One Inc.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse text-right" id="navbarText">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#about us">About Us</a>
+              <a class="nav-link" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#service">Service</a>
+              <a class="nav-link" href="#service">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#testimony">Testimony</a>
+              <a class="nav-link" href="#testimony">Testimony</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#staff">Staff</a>
+              <a class="nav-link" href="#staff">Staff</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- banner -->
-    <div class="container-fluid banner">
+    <div
+      class="container-fluid banner"
+      style="
+        background: url('latar2.png') no-repeat center center;
+        background-size: cover;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        color: white;
+      "
+    >
       <div class="container text-center">
         <h1 class="display-4">Consulting Is More</h1>
         <h2 class="display-2">Than Giving Advice</h2>
         <h6 class="display-7">Discover New Opportunities with Our Digital Consultants</h6>
-        <a href="#about us">
+        <a href="#about-us">
           <button type="button" class="btn btn-outline-secondary">Get Started</button>
         </a>
       </div>
     </div>
+
     <!-- about us -->
-    <div class="container-fluid about us pt-5 pb-5">
+    <div class="container-fluid about-us pt-5 pb-5" id="about-us">
       <div class="container">
-        <h2 class="display-3 text-center" id="about us">About Us</h2>
+        <h2 class="display-3 text-center">About Us</h2>
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <img src="about.png" class="img-fluid" alt="About Us Image" />
+          </div>
+          <div class="col-md-6">
+            <p>Welcome to One Inc., your Digital Partner!</p>
+            <p>
+              We are a passionate team in the world of digital consulting dedicated to helping you meet the challenges of modern technology.
+              As a leading digital consulting firm, our mission is to guide you through a successful digital transformation journey.
+            </p>
+            <p>
+              What makes us different? We combine in-depth knowledge of the latest technologies with a solid understanding of business
+              strategy. It's not just about technology; it's about how technology can empower your business. From designing innovative
+              digital strategies to optimizing customer experiences, One Inc. is a partner you can rely on. We've worked with a wide range
+              of businesses, from large corporations to startups, and we're here to help you achieve your business goals.
+            </p>
 
-        <div class="clearfix pt-5">
-          <img src="about.png" class="col-md-4 float-md-end mb-4 crop-img" width="400" height="300" />
-          <p>Welcome to One Inc., your Digital Partner!</p>
-          <p>
-            We are a passionate team in the world of digital consulting dedicated to helping you meet the challenges of modern technology.
-            As a leading digital consulting firm, our mission is to guide you through a successful digital transformation journey.
-          </p>
-          <p>
-            What makes us different? We combine in-depth knowledge of the latest technologies with a solid understanding of business
-            strategy. It's not just about technology; it's about how technology can empower your business. From designing innovative digital
-            strategies to optimizing customer experiences, One Inc. is a partner you can rely on. We've worked with a wide range of
-            businesses, from large corporations to startups, and we're here to help you achieve your business goals.
-          </p>
-
-          <p>
-            Our commitment to excellence and innovation continues to drive us to deliver high-quality digital consulting services. We
-            believe that in this ever-changing world, adaptation and innovation are the keys to success. With One Inc., you will feel the
-            difference from day one. Let's shape a successful digital future together.
-          </p>
-          <p>Thank you for your trust in us.</p>
+            <p>
+              Our commitment to excellence and innovation continues to drive us to deliver high-quality digital consulting services. We
+              believe that in this ever-changing world, adaptation and innovation are the keys to success. With One Inc., you will feel the
+              difference from day one. Let's shape a successful digital future together.
+            </p>
+            <p>Thank you for your trust in us.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -85,23 +159,30 @@
         <h2 class="display-3" id="service">Digital Consulting Service</h2>
         <div class="row pt-4">
           <div class="col-md-4">
-            <span class="lingkaran"><i class="fa-solid fa-chart-line fa-6x"></i></span>
+            <div class="rounded-circle lingkaran">
+              <i class="fa-solid fa-chart-line fa-6x"></i>
+            </div>
             <h3 class="mt-3">Analytics and Data</h3>
             <p>Helps organizations collect, analyze and understand digital data to make better decisions</p>
           </div>
           <div class="col-md-4">
-            <span class="lingkaran"><i class="fa-solid fa-code fa-6x"></i></span>
+            <div class="rounded-circle lingkaran">
+              <i class="fa-solid fa-code fa-6x"></i>
+            </div>
             <h3 class="mt-3">App and Website Development</h3>
             <p>Design, develop and manage custom websites and applications according to client requirements</p>
           </div>
           <div class="col-md-4">
-            <span class="lingkaran"><i class="fa-solid fa-shield fa-6x"></i></span>
+            <div class="rounded-circle lingkaran">
+              <i class="fa-solid fa-shield fa-6x"></i>
+            </div>
             <h3 class="mt-3">Cyber Security</h3>
             <p>Providing security solutions and strategies to protect data and digital systems from cyber threats</p>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Testimoni -->
     <div class="container-fluid Services pt-5 pb-5">
       <div class="container text-center">
@@ -112,28 +193,28 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card" style="width: 18rem; margin: 0 auto">
-                <img src="customer1.jpg" class="card-img-top" />
+              <div class="card mx-auto" style="max-width: 18rem">
+                <img src="customer1.jpg" class="card-img-top" alt="Rona Sibarani" />
                 <div class="card-body">
-                  <p>Rona Sibarani</p>
+                  <p class="card-text">Rona Sibarani</p>
                   <p class="card-text">"Sebagai pelanggan, saya sangat puas dengan layanan digital consulting ini."</p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style="width: 18rem; margin: 0 auto">
-                <img src="customor2.jpg" class="card-img-top" />
+              <div class="card mx-auto" style="max-width: 18rem">
+                <img src="customor2.jpg" class="card-img-top" alt="Yusi Sidabutar" />
                 <div class="card-body">
-                  <p>Yusi Sidabutar</p>
+                  <p class="card-text">Yusi Sidabutar</p>
                   <p class="card-text">"Saya merasa sangat dibantu dalam mengembangkan bisnis saya melalui konsultasi digital mereka."</p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card" style="width: 18rem; margin: 0 auto">
-                <img src="customer3.jpg" class="card-img-top" />
+              <div class="card mx-auto" style="max-width: 18rem">
+                <img src="customer3.jpg" class="card-img-top" alt="Jura" />
                 <div class="card-body">
-                  <p>Jura</p>
+                  <p class="card-text">Jura</p>
                   <p class="card-text">"Saya merasa yakin bahwa perusahaan ini akan membantu bisnis Anda tumbuh di era digital."</p>
                 </div>
               </div>
@@ -150,8 +231,8 @@
         </div>
       </div>
     </div>
-    <!-- Tim -->
 
+    <!-- Tim -->
     <div class="container-fluid pt-5 pb-5 bg-light">
       <div class="container text-center">
         <h2 class="display-3" id="staff">Our Team</h2>
